@@ -1,120 +1,134 @@
-<svg width="1200" height="660" viewBox="0 0 1200 660" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="660" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#090B16"/>
-      <stop offset="0.48" stop-color="#0E1020"/>
-      <stop offset="0.76" stop-color="#1D1430"/>
-      <stop offset="1" stop-color="#3A1F3E"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="65%" stop-color="#0e1426"/>
+      <stop offset="100%" stop-color="#11182d"/>
     </linearGradient>
-    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1050 570) rotate(-135) scale(420 300)">
-      <stop stop-color="#F2A8CA" stop-opacity="0.20"/>
-      <stop offset="1" stop-color="#F2A8CA" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 80) rotate(40) scale(350 260)">
-      <stop stop-color="#9B6BE8" stop-opacity="0.13"/>
-      <stop offset="1" stop-color="#9B6BE8" stop-opacity="0"/>
-    </radialGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1200" height="660" rx="18" fill="url(#bg)"/>
-  <rect width="1200" height="660" rx="18" fill="url(#glow1)"/>
-  <rect width="1200" height="660" rx="18" fill="url(#glow2)"/>
-  <rect x="1.5" y="1.5" width="1197" height="657" rx="16.5" stroke="#4B4C68" stroke-width="3"/>
+  <!-- outer card -->
+  <rect x="2" y="2" width="1196" height="686" rx="10" fill="url(#bg)" stroke="#2d3653" stroke-width="2"/>
 
-  <text x="28" y="47" font-family="monospace" font-size="17" font-weight="700" fill="#D8D9E5">sankaew67 / README.md</text>
-  <line x1="20" y1="68" x2="1180" y2="68" stroke="#30334C"/>
+  <!-- title -->
+  <text x="30" y="49" font-family="Consolas, 'Courier New', monospace" font-size="18" font-weight="700" fill="#e6e9f2">
+    Sankaew67<tspan fill="#6f7896"> / </tspan><tspan fill="#c6cbdb">README.md</tspan>
+  </text>
 
-  <!-- decorative stars -->
-  <g fill="#D9D9EC" font-family="serif">
-    <text x="62" y="126" font-size="30">✦</text>
-    <text x="102" y="164" font-size="17">✧</text>
-    <text x="382" y="118" font-size="22">✦</text>
-    <text x="420" y="160" font-size="15">✧</text>
-    <text x="58" y="205" font-size="15">✧</text>
+  <!-- inner panel -->
+  <rect x="18" y="72" width="1164" height="592" rx="5" fill="#0c1222" stroke="#303a5d" stroke-width="1.5"/>
+
+  <!-- sparkle stars -->
+  <g fill="#d9deef" opacity="0.9">
+    <text x="66" y="142" font-family="Georgia,serif" font-size="34">✦</text>
+    <text x="42" y="245" font-family="Georgia,serif" font-size="21">✦</text>
+    <text x="432" y="172" font-family="Georgia,serif" font-size="22">✦</text>
+    <text x="72" y="190" font-family="Georgia,serif" font-size="12">+</text>
+    <text x="92" y="208" font-family="Georgia,serif" font-size="11">+</text>
+    <text x="402" y="142" font-family="Georgia,serif" font-size="10">•</text>
   </g>
 
   <!-- ASCII portrait -->
-  <text x="45" y="105" font-family="'Courier New', monospace" font-size="10.8" fill="#D7D9E6" xml:space="preserve">
-    <tspan x="82" dy="0">                 ....,,,,,,....</tspan>
-    <tspan x="82" dy="12">            .;cllllllllllllllc;.</tspan>
-    <tspan x="82" dy="12">         .:lllllllllllllllllllll:.</tspan>
-    <tspan x="82" dy="12">       .clllllllllllllllllllllllllc.</tspan>
-    <tspan x="82" dy="12">      ;lllllllllllllxxxxllllllllllll;</tspan>
-    <tspan x="82" dy="12">     cllllllllllxxkkkkkkxxlllllllllllc</tspan>
-    <tspan x="82" dy="12">    cllllllllxxkkkOOOOOOkkxxllllllllllc</tspan>
-    <tspan x="82" dy="12">   ;lllllllxxkkOO000000OOkkxxlllllllll;</tspan>
-    <tspan x="82" dy="12">   lllllllxkkO00KKKKKKKK00Okkxlllllllll</tspan>
-    <tspan x="82" dy="12">  ;llllllxkO0KKXXXXXXXXKKK0Okxllllllll;</tspan>
-    <tspan x="82" dy="12">  llllllxkO0KXXNNNNNNNNXXK0Okxllllllll</tspan>
-    <tspan x="82" dy="12"> ;llllllxk0KXNNNNNNNNNNNNXK0kxllllllll;</tspan>
-    <tspan x="82" dy="12"> ;llllllkO0KXNNNNNNNNNNNNXK0Ollllllll;</tspan>
-    <tspan x="82" dy="12"> ;llllllkO0KXNNNNNNNNNNNNXK0Ollllllll;</tspan>
-    <tspan x="82" dy="12"> ;llllllxk0KXNNNNNNNNNNNNXK0kxllllllll;</tspan>
-    <tspan x="82" dy="12">  llllllxkO0KXXNNNNNNNNXXK0Okxllllllll</tspan>
-    <tspan x="82" dy="12">  ;llllllxkO0KKXXXXXXXXKK0Okxllllllll;</tspan>
-    <tspan x="82" dy="12">   lllllllxkkO00KKKKKK00Okkxllllllll</tspan>
-    <tspan x="82" dy="12">   ;lllllllxxkkOO0000OOkkxxllllllll;</tspan>
-    <tspan x="82" dy="12">    clllllllllxxkkOOOOkkxxlllllllllc</tspan>
-    <tspan x="82" dy="12">     cllllllllllxxkkkkxxlllllllllllc</tspan>
-    <tspan x="82" dy="12">      ;llllllllllllxxxxllllllllllll;</tspan>
-    <tspan x="82" dy="12">       .clllllllllllllllllllllllllc.</tspan>
-    <tspan x="82" dy="12">         .:lllllllllllllllllllll:.</tspan>
-    <tspan x="82" dy="12">            .;cllllllllllllllc;.</tspan>
-    <tspan x="82" dy="12">               ..,;;;;;;,..</tspan>
-    <tspan x="82" dy="17">                 .:llll:.</tspan>
-    <tspan x="82" dy="12">             .;cllllllllllc;.</tspan>
-    <tspan x="82" dy="12">          .:lllllllllllllllll:.</tspan>
-    <tspan x="82" dy="12">       .cllllllllllllllllllllllc.</tspan>
-    <tspan x="82" dy="12">     ;llllllllllllllllllllllllllll;</tspan>
-    <tspan x="82" dy="12">   .llllllllllllllllllllllllllllllll.</tspan>
-    <tspan x="82" dy="12">  cllllllllllllllllllllllllllllllllllc</tspan>
-  </text>
-
-  <!-- right-side profile info -->
-  <text x="500" y="108" font-family="'Courier New', monospace" font-size="18" fill="#B8C2F0" font-weight="700">sankaew67</text>
-  <line x1="617" y1="103" x2="1140" y2="103" stroke="#9CA8D8" stroke-width="1.4"/>
-
-  <g font-family="'Courier New', monospace" font-size="16">
-    <text x="500" y="139" fill="#F0A85E" font-weight="700">• Name:</text>
-    <text x="665" y="139" fill="#B7C5F5">Sankaew Sudmuk</text>
-
-    <text x="500" y="168" fill="#F0A85E" font-weight="700">• Birthday:</text>
-    <text x="665" y="168" fill="#B7C5F5">25 February 1999</text>
-
-    <text x="500" y="197" fill="#F0A85E" font-weight="700">• Location:</text>
-    <text x="665" y="197" fill="#B7C5F5">Thailand</text>
-
-    <text x="500" y="226" fill="#F0A85E" font-weight="700">• Role:</text>
-    <text x="665" y="226" fill="#B7C5F5">Developer / UI UX Designer</text>
-
-    <text x="500" y="272" fill="#F0A85E" font-weight="700">• Languages.Programming:</text>
-    <text x="780" y="272" fill="#B7C5F5">JavaScript, TypeScript, Python</text>
-
-    <text x="500" y="301" fill="#F0A85E" font-weight="700">• Languages.Computer:</text>
-    <text x="780" y="301" fill="#B7C5F5">HTML, CSS</text>
-
-    <text x="500" y="347" fill="#F0A85E" font-weight="700">• Creative:</text>
-    <text x="665" y="347" fill="#B7C5F5">UI / UX Design, Creative Coding</text>
-
-    <text x="500" y="393" fill="#AEB9E8" font-weight="700">• Contact</text>
-    <line x1="610" y1="388" x2="1140" y2="388" stroke="#9CA8D8" stroke-width="1.2"/>
-
-    <text x="500" y="425" fill="#F0A85E" font-weight="700">• Email.Personal:</text>
-    <text x="700" y="425" fill="#B7C5F5">sssudmuk@gmail.com</text>
-
-    <text x="500" y="454" fill="#F0A85E" font-weight="700">• GitHub:</text>
-    <text x="700" y="454" fill="#B7C5F5">github.com/sankaew67</text>
-
-    <text x="500" y="500" fill="#AEB9E8" font-weight="700">• GitHub Profile</text>
-    <line x1="670" y1="495" x2="1140" y2="495" stroke="#9CA8D8" stroke-width="1.2"/>
-
-    <text x="500" y="532" fill="#F0A85E" font-weight="700">• Focus:</text>
-    <text x="650" y="532" fill="#B7C5F5">Frontend / Design / Creative Web</text>
-
-    <text x="500" y="561" fill="#F0A85E" font-weight="700">• Status:</text>
-    <text x="650" y="561" fill="#B7C5F5">Building, learning, creating</text>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="11.8" fill="#dfe4f2">
+    <text x="70" y="113">
+      <tspan x="70" dy="0">                .,,,,,,,,,,,,.</tspan>
+      <tspan x="70" dy="13">           .;llcccccccccccccll;.</tspan>
+      <tspan x="70" dy="13">        .:clllllllllllllllllllllc:.</tspan>
+      <tspan x="70" dy="13">      .cllllllllllllllllllllllllllc.</tspan>
+      <tspan x="70" dy="13">     ;llllllllllllllllllllllllllllll;</tspan>
+      <tspan x="70" dy="13">    :lllllllllllllllc::clllllllllllll:</tspan>
+      <tspan x="70" dy="13">   ;lllllllllllllc;......;cllllllllllll;</tspan>
+      <tspan x="70" dy="13">  .lllllllllllll:..........:llllllllllll.</tspan>
+      <tspan x="70" dy="13">  ;llllllllllll;....     ....;lllllllllll;</tspan>
+      <tspan x="70" dy="13">  clllllllllll:....       ....:llllllllllc</tspan>
+      <tspan x="70" dy="13"> .llllllllllll.....       .....lllllllllll.</tspan>
+      <tspan x="70" dy="13"> .llllllllllll....  .. ..  ....lllllllllll.</tspan>
+      <tspan x="70" dy="13"> .llllllllllll....  .. ..  ....lllllllllll.</tspan>
+      <tspan x="70" dy="13">  llllllllllll:...............:llllllllllll</tspan>
+      <tspan x="70" dy="13">  ;llllllllllll;.....___.....;llllllllllll;</tspan>
+      <tspan x="70" dy="13">   lllllllllllll:...........:lllllllllllll</tspan>
+      <tspan x="70" dy="13">   ;llllllllllllllc:.....:cllllllllllllll;</tspan>
+      <tspan x="70" dy="13">    :llllllllllllllllllllllllllllllllllll:</tspan>
+      <tspan x="70" dy="13">     :llllllllllllllllllllllllllllllllll:</tspan>
+      <tspan x="70" dy="13">      ;llllllllllllllllllllllllllllllll;</tspan>
+      <tspan x="70" dy="13">      .llllllllllllllllllllllllllllllll.</tspan>
+      <tspan x="70" dy="13">       :llllllllllllllllllllllllllllll:</tspan>
+      <tspan x="70" dy="13">        ;llllllllllllllllllllllllllll;</tspan>
+      <tspan x="70" dy="13">         ;llllllllllllllllllllllllll;</tspan>
+      <tspan x="70" dy="13">          ;llllllllllllllllllllllll;</tspan>
+      <tspan x="70" dy="13">           :llllllllllllllllllllll:</tspan>
+      <tspan x="70" dy="13">            ;llllllllllllllllllll;</tspan>
+      <tspan x="70" dy="13">             ;llllllllllllllllll;</tspan>
+      <tspan x="70" dy="13">            .cclllllllllllllllcc.</tspan>
+      <tspan x="70" dy="13">          .:cclllllllllllllllllcc:.</tspan>
+      <tspan x="70" dy="13">       .:cllllllllllllllllllllllllllc:.</tspan>
+      <tspan x="70" dy="13">    .:cllllllllllllllllllllllllllllllllc:.</tspan>
+      <tspan x="70" dy="13"> .:cllllllllllllllllllllllllllllllllllllllc:.</tspan>
+    </text>
   </g>
 
-  <text x="30" y="625" font-family="'Courier New', monospace" font-size="14" fill="#8F9AD5">github.com/sankaew67</text>
-  <text x="1045" y="625" font-family="'Courier New', monospace" font-size="13" fill="#C98DB7">Sankaew Sudmuk</text>
+  <!-- right column -->
+  <g font-family="Consolas, 'Courier New', monospace">
+    <!-- username row -->
+    <text x="505" y="112" font-size="18" font-weight="700" fill="#aabfff">sankaew67</text>
+    <line x1="640" y1="108" x2="1150" y2="108" stroke="#aabfff" stroke-width="1.2"/>
+
+    <!-- info -->
+    <g font-size="17">
+      <text x="505" y="138" fill="#f2a348">• Name:</text>
+      <text x="730" y="138" fill="#a9bff8">Sankaew Sudmuk</text>
+
+      <text x="505" y="162" fill="#f2a348">• Birthday:</text>
+      <text x="730" y="162" fill="#a9bff8">25 February 1999</text>
+
+      <text x="505" y="186" fill="#f2a348">• Location:</text>
+      <text x="730" y="186" fill="#a9bff8">Thailand</text>
+
+      <text x="505" y="210" fill="#f2a348">• Role:</text>
+      <text x="730" y="210" fill="#a9bff8">Developer / UI UX Designer</text>
+
+      <text x="505" y="252" fill="#f2a348">• Languages.Programming:</text>
+      <text x="835" y="252" fill="#a9bff8">JavaScript, TypeScript, Python</text>
+
+      <text x="505" y="276" fill="#f2a348">• Languages.Computer:</text>
+      <text x="835" y="276" fill="#a9bff8">HTML, CSS</text>
+
+      <text x="505" y="300" fill="#f2a348">• Creative:</text>
+      <text x="730" y="300" fill="#a9bff8">UI / UX Design, Creative Coding</text>
+    </g>
+
+    <!-- Contact -->
+    <text x="505" y="344" font-size="17" fill="#aabfff">• Contact</text>
+    <line x1="605" y1="340" x2="1150" y2="340" stroke="#aabfff" stroke-width="1.2"/>
+
+    <g font-size="17">
+      <text x="505" y="371" fill="#f2a348">• Email.Personal:</text>
+      <text x="765" y="371" fill="#a9bff8">sssudmuk@gmail.com</text>
+
+      <text x="505" y="395" fill="#f2a348">• GitHub:</text>
+      <text x="765" y="395" fill="#a9bff8">github.com/sankaew67</text>
+    </g>
+
+    <!-- profile section in same position as stats -->
+    <text x="505" y="445" font-size="17" fill="#aabfff">• Profile</text>
+    <line x1="595" y1="441" x2="1150" y2="441" stroke="#aabfff" stroke-width="1.2"/>
+
+    <g font-size="17">
+      <text x="505" y="473" fill="#f2a348">• Focus:</text>
+      <text x="665" y="473" fill="#a9bff8">Frontend, UI / UX, Creative Coding</text>
+
+      <text x="505" y="497" fill="#f2a348">• Stack:</text>
+      <text x="665" y="497" fill="#a9bff8">JavaScript, TypeScript, Python, HTML, CSS</text>
+
+      <text x="505" y="521" fill="#f2a348">• Based in:</text>
+      <text x="665" y="521" fill="#a9bff8">Thailand</text>
+    </g>
+  </g>
 </svg>
